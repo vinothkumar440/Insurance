@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 # --- Load Models and Scaler ---
 # Load the trained GradientBoostingRegressor model
 try:
-    model = joblib.load('lr_model.pkl')
+    model = joblib.load('gbmreg_model.pkl')
 except FileNotFoundError:
     st.error("Model file 'lr_model.pkl' not found. Please make sure the model is trained and saved.")
     st.stop() # Stop the app if the model file is not found
